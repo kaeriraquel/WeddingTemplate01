@@ -1,0 +1,215 @@
+
+.carrusel{
+  display: flex;
+  /* padding: 0 35px; */
+  /* min-height: 100vh; */
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+} 
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height:max-content;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+/* CUENTA REGRESIVA */
+
+.countdown{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 2%;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+}
+.box{
+  width: 15vmin;
+  height: 15vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  position: relative;
+  font-size: 12px;
+}
+.box:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+span.num{
+  color: #C16301;
+  font-family:'Rotten', sans-serif;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 5em;
+}
+span.text{
+  color: #f2f2f2;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 400;
+}
+
+/* UBICACIONES */
+ .datos-ubicacion{
+  margin: auto;
+  text-align:center;
+  margin-top: 3%;
+  width:70%;
+}
+.datos-ubicacion .dato span{
+  color: #f2f2f2;
+}
+
+.nombre:after {
+  background-color: #f2f2f2;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align:baseline;
+  width: 5%;
+}
+
+.datos-ubicacion .dato .nombre{
+  font-family:'Rotten', sans-serif;
+  font-size: 30px;
+}
+
+.datos-ubicacion .dato .lugar{
+  font-family:'futura-md-bt-medium', sans-serif;
+  font-size: 15px;
+}
+
+/* iglesia */
+.mapa-ubicacion-iglesia .iglesia{
+  margin-top: 10%;
+}
+.mapa-ubicacion-iglesia .iglesia h1{
+  font-family:'Rotten', sans-serif;
+  color: #f2f2f2;
+  font-size: 50px;
+  text-align: center;
+}
+.mapa-ubicacion-iglesia .direccion span{
+  margin-top: 3%;
+  color: #f2f2f2;
+  font-size: 15px;
+}
+/* mapa */
+.mapa{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 1024px){
+  .countdown{
+      width: 85vw;
+  }
+  .box{
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px){
+  .countdown{
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+  .box{
+      width: calc( 50% - 40px );
+      height: 30vmin;
+      font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px){
+  .countdown{
+      gap: 15px;
+  }
+  .box{
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+  }
+  .span.text{
+      font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
