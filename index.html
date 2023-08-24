@@ -387,13 +387,14 @@
 		function sendWhatsapp() {
 		  var nombre = document.getElementById("nombre").value;
 		  var asistencia = document.getElementById("asistencia").value;
+		  var deseos = document.getElementById('mensaje').value;
 	
 		  var mensaje = "";
 	
 		  if (asistencia === "1") {
-			mensaje = "Hola, soy " + nombre + " y asistiré al evento. ¡Nos vemos allí!";
+			mensaje = "*Mensaje RSVP*: "+"Hola, soy *" + nombre + "* y asistiré al evento. ¡Nos vemos allí! " + deseos;
 		  } else if (asistencia === "2") {
-			mensaje = "Hola, soy " + nombre + " y no podré asistir al evento. ¡Espero verlos la próxima vez!";
+			mensaje = "Hola, soy *" + nombre + "* y no podré asistir al evento. ¡Espero verlos la próxima vez! " + deseos;
 		  }
 	
 		  var telefono = "8444598594";

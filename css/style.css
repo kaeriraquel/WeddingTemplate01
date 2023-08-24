@@ -280,7 +280,11 @@ span.text{
   .datos-ubicacion .dato .nombre{
     margin-top: 2%;
   }
+  .datos-ubicacion .dato .lugar{
+    margin-top: 2%;
+  }
   .datos-ubicacion{
     margin-top: 10%;
+    display: block;
   }
 }

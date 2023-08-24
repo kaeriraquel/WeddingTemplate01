@@ -157,6 +157,7 @@ header {
 .main .date-container .titulo-fecha h1{
   color: #F3F3EB;
   font-family:'Rotten', sans-serif;
+  text-align: center;
   font-size: 50px;
 }
 .main .date-container .fecha h1{
@@ -165,6 +166,7 @@ header {
   font-size: 20px;
   font-weight:normal;
   margin-top: 2%;
+  text-align: center;
 }
 .main .precios{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/etiqueta.png");
@@ -288,33 +290,33 @@ header {
 /* ----- ----- FOOTER ----- ----- */
 .main .final{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/footer.png");
+  height: 100vh;
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
+
 }
-.main .final img{
-  left: 50%;
-  top: 30%;
-  width: 7%;
-  position: absolute;
-}
+
 .main .final h1{
   color: #F3F3EB;
   font-family:'Rotten', sans-serif;
+  font-size: 50px;
 
 }
 .main .final span{
   color: #F3F3EB;
   font-family: 'Futura LT', sans-serif;
+  font-size: 30px;
 
 }
 .main .final .textos{
-  text-align: center;
-  position: absolute;
-  top: 70%;
-  left: 20%;
+      display:block;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      text-align: center;
+      margin: auto;
 }
 .background-menu .navbar-nav{
   margin: auto;
@@ -404,6 +406,7 @@ header {
       }
 
       .main .mesa-regalos .titulo-mesa h1{
+        text-align: center;
         font-size: 40px;
       }
       .main .mesa-regalos .info-mesa{
@@ -420,18 +423,20 @@ header {
       .main .final h1{
         color: #F3F3EB;
         font-family:'Rotten', sans-serif;
-        font-size: 20px;
+        font-size: 25px;
+        text-align: center;
       }
 
       .main .final .textos{
         text-align: center;
+        display: block;
         position: absolute;
-        top: 70%;
-        left: 8%;
+        bottom: 0;
       }
 
       .main .fotos .foto .thumb img {
-        width: 250%;
+        width: 100%;
+        text-align: center;
         vertical-align: top; 
         background-size:contain;
   
@@ -451,9 +456,16 @@ header {
     background-position: center 0;
     background-repeat: no-repeat; }
       
-    header .textos .cuarta_linea {
-      margin-top: 145%;
+    header .textos {
+
+      display:block;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
       font-size: 50px;
+      text-align: center;
+      margin: auto;
     }
+
 }
 /*# sourceMappingURL=estilos.css.map */
