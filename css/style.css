@@ -64,6 +64,39 @@
 .carousel img:first-child{
   margin-left: 0px;
 }
+/* carrusel 2 */
+.carrusel2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.carrusel2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1030px;
+  /* max-width: 510px; */
+  scroll-behavior: smooth;
+}
+
+.carrusel-fotos {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+.carrusel-fotos img {
+  /* background: black;
+  border: 4px solid black; */
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.carrusel-menu {
+  display: none;
+}
 
 /* CUENTA REGRESIVA */
 
@@ -74,6 +107,7 @@
   justify-content:center;
   align-items: center;
   margin-top: 2%;
+  margin-bottom: 4%;
   border: 3px solid #f2f2f2;
   border-radius: 30px;
 }
@@ -166,6 +200,13 @@ span.text{
   margin-top: 5%;
   border-radius: 24px;
 }
+.etiqueta-title{
+  color: #C16301;
+  font-family:'Rotten', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 1024px){
   .countdown{
@@ -211,5 +252,35 @@ span.text{
 @media screen and (max-width: 550px) {
   .carousel img{
     width: 100%;
+  }
+}
+
+/* carrusel 2 */
+@media screen and (min-width: 500px) {
+  /* .carrusel-fotos {
+    overflow: hidden;
+  } */
+
+  .carrusel-fotos img {
+    width: 400px;
+    height: 400px;
+  }
+  .carrusel-menu {
+    display: block;
+  }
+  .carrusel-menu img {
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    border: 10px solid black;
+  }
+  .carrusel-menu img:hover {
+    border: none;
+  }
+  .datos-ubicacion .dato .nombre{
+    margin-top: 2%;
+  }
+  .datos-ubicacion{
+    margin-top: 10%;
   }
 }
