@@ -107,7 +107,7 @@
   justify-content:center;
   align-items: center;
   margin-top: 2%;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
   border: 3px solid #f2f2f2;
   border-radius: 30px;
 }
@@ -151,8 +151,8 @@ span.text{
  .datos-ubicacion{
   margin: auto;
   text-align:center;
-  margin-top: 3%;
-  width:70%;
+  margin-top: 0%;
+  width:100%;
 }
 .datos-ubicacion .dato span{
   color: #f2f2f2;
@@ -221,7 +221,7 @@ span.text{
 @media screen and (max-width: 768px){
   .countdown{
       width: 90vw;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       gap: 30px;
   }
   .box{
@@ -243,6 +243,33 @@ span.text{
       font-size: 1.5em;
   }
 }
+@media screen and (max-width: 360px){
+  .countdown{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+  }
+  .box{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    font-size: 8px;
+    margin-left: 5%;
+  }
+  .span.text{
+      font-size: 1em;
+  }
+} 
 @media screen and (max-width: 900px) {
   .carousel img{
     width: calc(100% / 2);
