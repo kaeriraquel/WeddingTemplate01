@@ -19,7 +19,7 @@
   color: #343F4F;
   cursor: pointer;
   font-size: 1.15rem;
-  position: absolute;
+  /* position: absolute;  este hace que se abra un espacio de mas en el div*/
   text-align: center;
   line-height: 44px;
   background: #fff;
